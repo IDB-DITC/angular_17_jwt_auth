@@ -1,0 +1,28 @@
+<p>home components works!</p>
+
+<div style="margin:45px">
+
+    <div>{{user.username}}</div>
+    <div>{{user.email}}</div>
+    <!-- <div>{{user.token}}</div> -->
+    <div>{{user.roles}}</div>
+
+</div>
+<button (click)="logout()">Logout</button>
+<button (click)="refreshToken()">Refresh Token</button>
+
+
+<hr />
+
+<h1>
+    Syncfusion Angular UI Grid!
+</h1>
+
+<ejs-grid [dataSource]='data'  allowFiltering="true" allowMultiSorting="true" allowExcelExport=true>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+    </e-columns>
+</ejs-grid>
